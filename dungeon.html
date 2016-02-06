@@ -22,10 +22,20 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<!-- My Angular/JS -->
 	<script type="text/javascript" src="angular/module.js"></script>
+	<script type="text/javascript" src="angular/dungeonFactory.js"></script>
 	<script type="text/javascript" src="angular/dungeonController.js"></script>
 
 </head>
 <body>
+
+	<div class="container">
+
+		<div class="row" ng-controller="dungeonController">
+			<div ng-repeat="room in dungeon.map" class="col-xs-4 room-container">
+			</div>
+		</div>
+
+	</div>
 
 
 </body>

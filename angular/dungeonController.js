@@ -1,4 +1,5 @@
 angular.module('app')
-	.congtoller('dungeonController', ['$scope', function(scope){
-		
+	.controller('dungeonController', ['$scope', 'dungeonFactory', function(scope, dungeon){
+		scope.dungeon = dungeon.dungeon;
+		console.log(scope.dungeon.map)
 	}])
